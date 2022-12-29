@@ -1,0 +1,17 @@
+/*Reset*/
+@import url('https://fonts.googleapis.com/css2?family= Viaduto & display família= Viaduto:wght@400;700 & swap');
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Overpass', sans-serif;
+	outline: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none
+}
