@@ -14,10 +14,10 @@ body{
 }
 
 .feedback-card{
-	height: 45vh;
-	width: 33vw;
+	height: auto;
+	width: 30vw;
 	background-color: hsl(213, 19%, 18%);
-	border-radius: 16px;
+	border-radius: 22px;
 	padding: 24px;
 }
 
@@ -32,6 +32,7 @@ body{
 
 .feedback-card .text-card{
 	margin-top: 32px;
+	width: 85%;
 }
 
 .feedback-card .text-card h1{
@@ -42,7 +43,36 @@ body{
 .feedback-card .text-card p{
 	color: hsl(217, 12%, 63%);
 	font-weight: 500;
-	margin-top: 12px;
+	margin-top: 16px;
+	font-size: 15px;
+}
+
+.feedback-card  .box-label{
+	margin-top: 32px;
+	
+}
+
+.box-label label{
+	color: hsl(216, 12%, 54%);
+	background-color: hsl(216, 14%, 15%);
+	padding: 13px 19px 13px 19px;
+	border-radius: 26px;
+	margin-right: 20px;
+	transition: .1s ease-in-out;
+}
+
+.feedback-card .box-label label:hover{
+	background-color: hsl(216, 12%, 54%);
+	color: hsl(0, 0%, 100%);
+}
+
+.feedback-card .box-label label:last-of-type{
+	margin-right: 0;
+}
+
+.feedback-card .box-label .selected-radio-feedback{
+	background-color: hsl(25, 97%, 53%)!important;
+	color: hsl(0, 0%, 100%);
 }
 
 .btn-submit{
@@ -57,10 +87,13 @@ body{
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	transition: .1s ease-in-out;
 }
 
-
-
+.btn-submit:hover{
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(25, 97%, 53%)
+}
 
 
 .attribution { 

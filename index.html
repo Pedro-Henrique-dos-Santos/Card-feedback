@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="./assets/scripts/app.js" defer></script>
   <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
   <script type="text/javascript" src></script>
 </head>
+
 <body>
 
-  <div class="feedback-card">
-      <div class="star"></div>
-      <div class="text-card">
-        <h1>How did we do?</h1>
-        <p>Please let us know we did with your support
+  <main class="feedback-card">
+    <div class="star"></div>
+    <div class="text-card">
+      <h1>How did we do?</h1>
+      <p>Please let us know we did with your support
         request. All feedback is appreciated to help us
         improve our offering!</p>
+    </div>
+    <form class="feedback-form">
+      <div class="box-label">
+        <label for="radio-feedback-one">1</label>
+        <label for="radio-feedback-two">2</label>
+        <label for="radio-feedback-three">3</label>
+        <label for="radio-feedback-four">4</label>
+        <label for="radio-feedback-five">5</label>
       </div>
-      <form class="feedback-form">
-        <label for="radio-feedback-one selected-radio-feedback"></label>
-       
-        <label for="radio-feedback-two"></label>
-        <label for="radio-feedback-three"></label>
-        <label for="radio-feedback-four"></label>
-        <label for="radio-feedback-five"></label>
-        <div class="box-radio">
-          <input type="radio" id="radio-feedback-one" class="feedback-radio" name="feedback-radio" value="1">
-          <input type="radio" id="radio-feedback-two" class="feedback-radio"name="feedback-radio" value="2">
-          <input type="radio" id="radio-feedback-three"class="feedback-radio" name="feedback-radio" value="3">
-          <input type="radio" id="radio-feedback-four" class="feedback-radio" name="feedback-radio" value="4">
-          <input type="radio" id="radio-feedback-five"class="feedback-radio"name="feedback-radio" value="5">
-        </div>
-        <button class="btn-submit">submit</button>
-      </form>
-  </div>
+      <div class="box-radio">
+        <input type="radio" id="radio-feedback-one" class="feedback-radio" name="feedback-radio" value="1">
+        <input type="radio" id="radio-feedback-two" class="feedback-radio" name="feedback-radio" value="2">
+        <input type="radio" id="radio-feedback-three" class="feedback-radio" name="feedback-radio" value="3">
+        <input type="radio" id="radio-feedback-four" class="feedback-radio" name="feedback-radio" value="4">
+        <input type="radio" id="radio-feedback-five" class="feedback-radio" name="feedback-radio" value="5">
+      </div>
+      <button class="btn-submit">submit</button>
+    </form>
+  </main>
 
-  
-  
+
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Leeondras</a>.
   </div>
 </body>
+
 </html>
