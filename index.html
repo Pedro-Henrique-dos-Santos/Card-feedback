@@ -13,20 +13,30 @@
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
-  <script type="text/javascript" src></script>
+  <script type="text/javascript" src="assets/scripts/app.js" defer></script>
 </head>
 
 <body>
 
   <main class="feedback-card">
-    <div class="star"></div>
-    <div class="text-card">
-      <h1>How did we do?</h1>
-      <p>Please let us know we did with your support
+    <div class="star" data-feedback="submit"></div>
+    <div class="text-card" data-feedback="submit">
+      <h1 class="title" data-feedback="submit">How did we do?</h1>
+      <p class="paragraph" data-feedback="submit">Please let us know we did with your support
         request. All feedback is appreciated to help us
         improve our offering!</p>
     </div>
-    <form class="feedback-form">
+    <div class="thanks-contain">
+      <div class="image-cell" data-feedback="thank-you"></div>
+      <small class="small" data-feedback="thank-you"></small>
+      <div class="text-card" data-feedback="thank-you">
+        <h2 class="title"  data-feedback="thank-you">Thank-you!</h2>
+        <p class="paragraph" data-feedback="thank-you">We appreciate you taking the time to a give a rating. if you ever
+          need more support. don't
+          hesitate to get in touch!</p>
+      </div>
+    </div>
+    <form class="feedback-form" data-feedback="submit">
       <div class="box-label">
         <label for="radio-feedback-one">1</label>
         <label for="radio-feedback-two">2</label>
@@ -35,11 +45,11 @@
         <label for="radio-feedback-five">5</label>
       </div>
       <div class="box-radio">
-        <input type="radio" id="radio-feedback-one" class="feedback-radio" name="feedback-radio" value="1">
-        <input type="radio" id="radio-feedback-two" class="feedback-radio" name="feedback-radio" value="2">
-        <input type="radio" id="radio-feedback-three" class="feedback-radio" name="feedback-radio" value="3">
-        <input type="radio" id="radio-feedback-four" class="feedback-radio" name="feedback-radio" value="4">
-        <input type="radio" id="radio-feedback-five" class="feedback-radio" name="feedback-radio" value="5">
+        <input type="radio" id="radio-feedback-one" name="feedback-radio" value="1">
+        <input type="radio" id="radio-feedback-two" name="feedback-radio" value="2">
+        <input type="radio" id="radio-feedback-three" name="feedback-radio" value="3">
+        <input type="radio" id="radio-feedback-four" name="feedback-radio" value="4">
+        <input type="radio" id="radio-feedback-five" name="feedback-radio" value="5">
       </div>
       <button class="btn-submit">submit</button>
     </form>

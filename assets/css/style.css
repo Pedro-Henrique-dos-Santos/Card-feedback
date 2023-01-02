@@ -11,14 +11,16 @@ body{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 0px 4% 0px 4%;
 }
 
 .feedback-card{
 	height: auto;
-	width: 30vw;
+	min-width: 385px;
+	max-width: 400px;
 	background-color: hsl(213, 19%, 18%);
 	border-radius: 22px;
-	padding: 24px;
+	padding: 14px 24px 14px 24px;
 }
 
 .star{
@@ -35,12 +37,12 @@ body{
 	width: 85%;
 }
 
-.feedback-card .text-card h1{
+.feedback-card .text-card .title{
 	color: hsl(0, 0%, 100%);
 	font-weight: 700;
 }
 
-.feedback-card .text-card p{
+.feedback-card .text-card .paragraph{
 	color: hsl(217, 12%, 63%);
 	font-weight: 500;
 	margin-top: 16px;
@@ -110,4 +112,69 @@ body{
 .box-radio{
 	display: none;
 }
+[data-feedback="submit"]{
+	display: none;
+}
 
+[data-feedback="submit"].active{
+	display: block;
+}
+
+[data-feedback="thank-you"]{
+	display: none;
+}
+
+[data-feedback="thank-you"].active{
+	display: block;
+}
+
+.thanks-contain{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-cell{
+	background: url(../images/illustration-thank-you.svg) center center no-repeat;
+	background-size: contain;
+	width: 124px;
+	height: 124px;
+}
+
+[data-feedback="thank-you"].title{
+	text-align: center;
+}
+
+[data-feedback="thank-you"].paragraph{
+	text-align: center;
+}
+
+.small{
+	color: hsl(25, 97%, 53%);
+	background-color: hsl(213, 18%, 14%);
+	padding: 12px;
+	border-radius: 18px;
+}
+
+@media screen and (max-width: 375px){
+	.feedback-card{
+		height: auto;
+		min-width: 345px;
+	}
+
+	.box-label label{
+		font-size: 14px;
+		padding: 13px 16px 13px 16px;
+	}
+
+	.feedback-card .text-card .paragraph{
+		font-size: 13px;
+	}
+
+	.feedback-card .text-card .title{
+		font-size: 26px;
+	}
+
+	
+}
